@@ -59,12 +59,12 @@ export default function Home() {
           <div className="container flex flex-col items-center text-center gap-8">
             <div className="space-y-4 max-w-3xl">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-                Elevate Your Strength Training with{" "}
-                <span className="text-primary">Barbell Gorilla</span>
+                FORGE YOUR STRENGTH WITH{" "}
+                <span className="gold-text">BARBELL GORILLA</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-[700px] mx-auto">
-                Generate personalized workout plans based on your one-rep max,
-                track your progress, and achieve your strength goals.
+              <p className="text-xl text-muted-foreground max-w-[700px] mx-auto font-bold uppercase tracking-wide">
+                IRON-FORGED TRAINING PROGRAMS • CONCRETE PLATE MENTALITY • OLD
+                SCHOOL GAINS
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -77,12 +77,13 @@ export default function Home() {
                 <Link href="#features">Learn More</Link>
               </Button>
             </div>
-            <div className="relative w-full max-w-5xl mt-8 rounded-lg overflow-hidden border shadow-xl">
+            <div className="relative w-full max-w-5xl mt-8 rounded-lg overflow-hidden border shadow-xl vintage-frame">
               <img
-                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80"
-                alt="Person lifting weights"
-                className="w-full h-auto object-cover"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80"
+                alt="Intense powerlifting with concrete plates"
+                className="w-full h-auto object-cover sepia-tone"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent vintage-overlay"></div>
             </div>
           </div>
         </section>
@@ -100,55 +101,58 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="bg-background">
+              <Card className="vintage-card concrete-texture">
                 <CardHeader>
                   <FileText className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>Personalized Workout Plans</CardTitle>
-                  <CardDescription>
-                    Generate custom workout plans based on your one-rep max for
-                    bench press and squat.
+                  <CardTitle className="uppercase tracking-wider">
+                    IRON-FORGED PROGRAMS
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground/80">
+                    Custom training blueprints based on your max lifts. No
+                    fluff, just results.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    Our algorithm creates progressive overload programs tailored
-                    to your current strength level, helping you achieve
-                    consistent gains.
+                  <p className="text-sm">
+                    Built like the old masters did it - progressive overload,
+                    compound movements, and relentless pursuit of strength.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-background">
+              <Card className="vintage-card concrete-texture">
                 <CardHeader>
                   <BarChart2 className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>Progress Tracking</CardTitle>
-                  <CardDescription>
-                    Visualize your strength improvements over time with detailed
-                    charts and metrics.
+                  <CardTitle className="uppercase tracking-wider">
+                    STRENGTH METRICS
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground/80">
+                    Track every pound, every rep, every victory. Numbers don't
+                    lie.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    Track your one-rep max progression, volume lifted, and other
-                    key performance indicators to stay motivated and informed.
+                  <p className="text-sm">
+                    Monitor your ascent from novice to elite. Watch your one-rep
+                    max climb like the legends before you.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-background">
+              <Card className="vintage-card concrete-texture">
                 <CardHeader>
                   <Calendar className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>Workout Timeline</CardTitle>
-                  <CardDescription>
-                    Access your current workout regimen and view your training
-                    history.
+                  <CardTitle className="uppercase tracking-wider">
+                    TRAINING LOG
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground/80">
+                    Your iron journey documented. Every session matters.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    Never lose track of your training plan with our organized
-                    timeline view showing past, current, and upcoming workout
-                    sessions.
+                  <p className="text-sm">
+                    Chronicle your path to greatness. From your first plate to
+                    personal records that echo through the gym.
                   </p>
                 </CardContent>
               </Card>
@@ -269,17 +273,21 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary text-primary-foreground">
+        <section className="py-20 bg-primary text-primary-foreground concrete-texture">
           <div className="container text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">
-              Ready to Become a Barbell Gorilla?
+            <h2 className="text-3xl font-bold tracking-tight mb-4 uppercase">
+              READY TO JOIN THE IRON BROTHERHOOD?
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Join today and start your journey to increased strength and better
-              performance.
+            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 font-bold uppercase tracking-wide">
+              STEP INTO THE TEMPLE • EMBRACE THE GRIND • BECOME LEGENDARY
             </p>
-            <Button size="lg" variant="secondary" asChild>
-              <Link href="/signup">Create Your Account</Link>
+            <Button
+              size="lg"
+              variant="secondary"
+              asChild
+              className="uppercase tracking-wider font-bold"
+            >
+              <Link href="/signup">ENTER THE GYM</Link>
             </Button>
           </div>
         </section>
